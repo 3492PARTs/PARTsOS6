@@ -110,7 +110,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="SubSystems" Type="Folder" URL="../SubSystems">
+		<Item Name="OS6 VIs" Type="Folder" URL="../OS6 VIs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Support Code" Type="Folder">
@@ -554,10 +554,31 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_UtilitiesTimebaseConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesTimebaseConstants.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
+			<Item Name="Analyze Target.vi" Type="VI" URL="../SubSystems/Vision Support Code/Analyze Target.vi"/>
+			<Item Name="Arm Auto.vi" Type="VI" URL="../SubSystems/Auto VIs/Arm Auto.vi"/>
+			<Item Name="Arm.vi" Type="VI" URL="../OS6 VIs/SubSystems/Arm.vi"/>
+			<Item Name="Calculate Particle Scores.vi" Type="VI" URL="../SubSystems/Vision Support Code/Calculate Particle Scores.vi"/>
+			<Item Name="Camera.vi" Type="VI" URL="../OS6 VIs/SubSystems/Camera.vi"/>
+			<Item Name="ControlsToCommands.ctl" Type="VI" URL="../OS6 VIs/Joystick/ControlsToCommands.ctl"/>
+			<Item Name="ControlsToCommands.vi" Type="VI" URL="../SubSystems/Joystick/ControlsToCommands.vi"/>
+			<Item Name="DIO Limits.vi" Type="VI" URL="../OS6 VIs/SubSystems/Utility VIs/DIO Limits.vi"/>
+			<Item Name="Drive Back.vi" Type="VI" URL="../SubSystems/Auto VIs/Drive Back.vi"/>
+			<Item Name="Drive Forward.vi" Type="VI" URL="../OS6 VIs/SubSystems/Auto VIs/Drive Forward.vi"/>
+			<Item Name="Drive Forward.vi" Type="VI" URL="../SubSystems/Auto VIs/Drive Forward.vi"/>
+			<Item Name="Drive Turn.vi" Type="VI" URL="../OS6 VIs/SubSystems/Auto VIs/Drive Turn.vi"/>
+			<Item Name="Drive Turn.vi" Type="VI" URL="../SubSystems/Auto VIs/Drive Turn.vi"/>
+			<Item Name="Driving.vi" Type="VI" URL="../OS6 VIs/SubSystems/Driving.vi"/>
+			<Item Name="Find the Distance.vi" Type="VI" URL="../SubSystems/Vision Support Code/Find the Distance.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Gather Relevant Data.vi" Type="VI" URL="../SubSystems/Vision Support Code/Gather Relevant Data.vi"/>
+			<Item Name="Indexer.vi" Type="VI" URL="../OS6 VIs/SubSystems/Indexer.vi"/>
+			<Item Name="Indexing.vi" Type="VI" URL="../SubSystems/Auto VIs/Indexing.vi"/>
+			<Item Name="JoystickControls.vi" Type="VI" URL="../SubSystems/Joystick/JoystickControls.vi"/>
+			<Item Name="Label Targets2.vi" Type="VI" URL="../SubSystems/Vision Support Code/Label Targets2.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Merge Errors.vi" Type="VI" URL="../OS6 VIs/SubSystems/Utility VIs/Merge Errors.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -570,6 +591,25 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="PARTs_CameraSend Images To PC Loop.vi" Type="VI" URL="../SubSystems/Camera Support Code/PARTs_CameraSend Images To PC Loop.vi"/>
+			<Item Name="Photon Canon.vi" Type="VI" URL="../OS6 VIs/SubSystems/Photon Canon.vi"/>
+			<Item Name="PowerRamp.vi" Type="VI" URL="../OS6 VIs/SubSystems/Utility VIs/PowerRamp.vi"/>
+			<Item Name="Reevaluate Target.vi" Type="VI" URL="../OS6 VIs/SubSystems/Vision Support Code/Reevaluate Target.vi"/>
+			<Item Name="Refnums.vi" Type="VI" URL="../OS6 VIs/SubSystems/References/Refnums.vi"/>
+			<Item Name="Refnums.vi" Type="VI" URL="../SubSystems/References/Refnums.vi"/>
+			<Item Name="Relevant Data.ctl" Type="VI" URL="../SubSystems/References/Relevant Data.ctl"/>
+			<Item Name="Robot Global Data.vi" Type="VI" URL="../OS6 VIs/Robot Global Data.vi"/>
+			<Item Name="Robot Systems.vi" Type="VI" URL="../SubSystems/Robot Controls/Robot Systems.vi"/>
+			<Item Name="Scaling Dead Zone.vi" Type="VI" URL="../OS6 VIs/SubSystems/Utility VIs/Scaling Dead Zone.vi"/>
+			<Item Name="Shoot.vi" Type="VI" URL="../SubSystems/Auto VIs/Shoot.vi"/>
+			<Item Name="Shooting Shoot.vi" Type="VI" URL="../OS6 VIs/SubSystems/Auto VIs/Shooting Shoot.vi"/>
+			<Item Name="Shooting Shoot.vi" Type="VI" URL="../SubSystems/Auto VIs/Shooting Shoot.vi"/>
+			<Item Name="Shooting.vi" Type="VI" URL="../OS6 VIs/SubSystems/Shooting.vi"/>
+			<Item Name="Sorted Particle Report 2016.vi" Type="VI" URL="../SubSystems/Vision Support Code/Sorted Particle Report 2016.vi"/>
+			<Item Name="Stop.vi" Type="VI" URL="../OS6 VIs/SubSystems/Auto VIs/Stop.vi"/>
+			<Item Name="Stop.vi" Type="VI" URL="../SubSystems/Auto VIs/Stop.vi"/>
+			<Item Name="Toggle.vi" Type="VI" URL="../OS6 VIs/SubSystems/Utility VIs/Toggle.vi"/>
+			<Item Name="Vision E-Stop.vi" Type="VI" URL="../OS6 VIs/SubSystems/Vision E-Stop.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
